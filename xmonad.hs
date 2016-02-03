@@ -89,13 +89,13 @@ myUrgentWSRight = "}"
 
 myWorkspaces =
   [
-    "7:Web",  "8:ssh", "9:Mail",
-    "4:Dev1", "5:Dev2", "6:Dev3",
-    "1:Dbg",  "2:Files",  "3:Docs",
-    "0:VM",  "-:Extr1",  "+:Extr2"
+    "7",  "8", "9",
+    "4", "5", "6",
+    "1",  "2",  "3",
+    "0",  "-",  "+"
   ]
 
-startupWorkspace = "4:Dev1"  -- which workspace do you want to be on after launch?
+startupWorkspace = "4"  -- which workspace do you want to be on after launch?
 
 {-
   Layout configuration. In this section we identify which xmonad
@@ -252,9 +252,9 @@ myManagementHooks = [
   , resource =? "stalonetray" --> doIgnore
   , className =? "rdesktop" --> doFloat
   , (className =? "gcalctool") --> doFloat
-  , (className =? "Firefox") --> doF (W.shift "7:Web")
-  , (className =? "Thunderbird") --> doF (W.shift "9:Mail")
-  , (className =? "VirtualBox") --> doF (W.shift "0:VM")
+  , (className =? "Firefox") --> doF (W.shift "7")
+  , (className =? "Thunderbird") --> doF (W.shift "9")
+  , (className =? "VirtualBox") --> doF (W.shift "0")
   ]
 
 
