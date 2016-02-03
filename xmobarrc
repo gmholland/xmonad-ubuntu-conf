@@ -13,8 +13,8 @@
 Config { 
   -- Set font and default foreground/background colors. Note that
   -- the height of xmobar is controlled by the font you use.
-  font = "xft:Ubuntu Mono-14",
-  bgColor = "black",
+  font = "xft:Deja Vu Sans:size=12:antialias=true",
+  bgColor = "#002B36",
   fgColor = "grey",
 
   -- Position is top left, taking up 95% of screen.
@@ -73,5 +73,5 @@ Config {
 
    -- Overall template for the layout of the xmobar contents. Note that
    -- space is significant and can be used to add padding.
-   template = "%StdinReader% }{ %battery% | %cpu% | %memory% | Vol: %myvolume%    <fc=#e6744c>%date%</fc>     "
+   template = "%StdinReader% }{ %battery% | %cpu% | %memory% | Vol: %myvolume%    <fc=#fcaf3e>%date%</fc>     "
 }
