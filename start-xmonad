@@ -84,7 +84,7 @@ stalonetray \
   --icon-gravity E \
   --geometry 5x1-0+0 \
   --max-geometry 5x1-0+0 \
-  --background '#000000' \
+  --background '#073642' \
   --skip-taskbar \
   --icon-size 24 \
   --kludges force_icons_size \

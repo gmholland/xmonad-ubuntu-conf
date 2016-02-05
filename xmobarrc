@@ -14,8 +14,8 @@ Config {
   -- Set font and default foreground/background colors. Note that
   -- the height of xmobar is controlled by the font you use.
   font = "xft:Deja Vu Sans:size=12:antialias=true",
-  bgColor = "#002B36",
-  fgColor = "grey",
+  bgColor = "#073642",
+  fgColor = "#839496",
 
   -- Position is top left, taking up 95% of screen.
   -- You are likely to have to tweak the width here based on the width

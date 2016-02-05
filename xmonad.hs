@@ -55,11 +55,11 @@ myIMRosterTitle      = "Buddy List"   -- title of roster on IM workspace
   of text which xmonad is sending to xmobar via the DynamicLog hook.
 -}
 
-myTitleColor     = "#eeeeec"  -- color of window title
+myTitleColor     = "#93a1a1"  -- color of window title
 myTitleLength    = 80         -- truncate window title to this length
-myCurrentWSColor = "#fcaf3e"  -- color of active workspace
-myVisibleWSColor = "#c185a7"  -- color of inactive workspace
-myUrgentWSColor  = "#ef2929"  -- color of workspace with 'urgent' window
+myCurrentWSColor = "#b58900"  -- color of active workspace
+myVisibleWSColor = "#6c71c4"  -- color of inactive workspace
+myUrgentWSColor  = "#dc322f"  -- color of workspace with 'urgent' window
 myCurrentWSLeft  = "["        -- wrap active workspace with these
 myCurrentWSRight = "]"
 myVisibleWSLeft  = "("        -- wrap inactive workspace with these
