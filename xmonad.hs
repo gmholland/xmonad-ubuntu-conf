@@ -194,6 +194,7 @@ myKeyBindings =
     ((myModMask, xK_b), sendMessage ToggleStruts)
     , ((myModMask, xK_a), sendMessage MirrorShrink)
     , ((myModMask, xK_z), sendMessage MirrorExpand)
+    , ((myModMask, xK_n), sendMessage Expand)
     , ((myModMask, xK_p), spawn "synapse")
     , ((myModMask .|. mod1Mask, xK_space), spawn "synapse")
     , ((myModMask, xK_u), focusUrgent)
