@@ -196,7 +196,7 @@ myKeyBindings =
     , ((myModMask, xK_z), sendMessage MirrorExpand)
     , ((myModMask, xK_n), sendMessage Expand)
     , ((myModMask, xK_p), spawn "synapse")
-    , ((myModMask .|. mod1Mask, xK_space), spawn "synapse")
+    , ((myModMask, xK_l), spawn "gnome-screensaver-command --lock")
     , ((myModMask, xK_u), focusUrgent)
     , ((0, 0x1008FF12), spawn "amixer -q set Master toggle")
     , ((0, 0x1008FF11), spawn "amixer -q set Master 10%-")
