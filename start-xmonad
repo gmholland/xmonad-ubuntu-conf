@@ -101,6 +101,10 @@ gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 # xmonad related, but it's handy if you're a vim user.
 xmodmap ~/.xmodmaprc
 
+# Run the policy kit authentication agent to allow Ubuntu Software Centre to
+# prompt for authentication
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
 # Now, finally, start xmonad
 exec xmonad
 
