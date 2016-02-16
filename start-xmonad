@@ -106,5 +106,5 @@ xmodmap ~/.xmodmaprc
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Now, finally, start xmonad
-exec xmonad
+exec ~/.cabal/bin/xmonad
 
