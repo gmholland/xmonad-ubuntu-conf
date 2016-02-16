@@ -23,7 +23,7 @@ else
 fi
 
 time_raw=${acpi_output[4]}
-if [[ $time_raw} ]]; then
+if [[ $time_raw ]]; then
 	IFS=':' read -r -a time_orig <<< "$time_raw"
 	time="(${time_orig[0]}:${time_orig[1]})"
 else
