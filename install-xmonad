@@ -22,7 +22,7 @@ sudo apt-add-repository ppa:synapse-core/testing
 sudo apt-get update
 
 echo "Installing prerequisite libraries..."
-sudo apt-get intsall libx11-dev libxinerama-dev libxext-dev libxpm-dev
+sudo apt-get intsall libx11-dev libxinerama-dev libxext-dev libxpm-dev libxrandr-dev libxft-dev
 
 echo "Installing Haskell packages..."
 sudo apt-get intsall ghc cabal-install
@@ -31,7 +31,7 @@ echo "Install xmonad and xmobar through cabal..."
 cabal update
 cabal install xmonad
 cabal install xmonad-contrib
-cabal install xmobar
+cabal install xmobar --flags="with_xft"
 
 echo "Installing extra packages..."
 sudo apt-get install xcompmgr nitrogen stalonetray moreutils consolekit synapse ssh-askpass-gnome acpi redshift lxappearance
