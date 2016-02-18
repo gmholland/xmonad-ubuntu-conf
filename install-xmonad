@@ -22,7 +22,7 @@ sudo apt-add-repository ppa:synapse-core/testing
 sudo apt-get update
 
 echo "Installing prerequisite libraries..."
-sudo apt-get install libx11-dev libxinerama-dev libxext-dev libxpm-dev libxrandr-dev libxft-dev
+sudo apt-get install libx11-dev libxinerama-dev libxext-dev libxpm-dev libxrandr-dev libxft-dev libasound2-dev c2hs
 
 echo "Installing Haskell packages..."
 sudo apt-get install ghc cabal-install
@@ -31,7 +31,7 @@ echo "Install xmonad and xmobar through cabal..."
 cabal update
 cabal install xmonad
 cabal install xmonad-contrib
-cabal install xmobar --flags="with_xft"
+cabal install xmobar -f with_xft -f with_alsa
 
 echo "Installing extra packages..."
 sudo apt-get install xcompmgr nitrogen stalonetray moreutils consolekit synapse ssh-askpass-gnome acpi redshift lxappearance
@@ -44,6 +44,6 @@ sudo cp ~/.xmonad/images/custom_xmonad_badge.png /usr/share/unity-greeter
 sudo chmod a+r /usr/share/unity-greeter/custom_xmonad_badge.png
 
 echo "Linking to customized gnome 2 configuration..."
-mv ~/.gtkrc-2.0 ~/gtkrc-2.0.original
+mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.original
 ln -s .xmonad/.gtkrc-2.0 ~/.gtkrc-2.0
 
