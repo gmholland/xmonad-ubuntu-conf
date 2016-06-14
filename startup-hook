@@ -20,6 +20,9 @@ fi
 # Dropbox
 dropbox start
 
+# OwnCloud
+owncloud &
+
 # Applet for managing print jobs from the tray.
 if [ -z "$(pgrep system-config-printer-applet)" ] ; then
     system-config-printer-applet &
