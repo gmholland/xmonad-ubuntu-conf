@@ -97,9 +97,9 @@ stalonetray \
 # certificates and the like.
 gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 
-# Remap caps lock to escape with xmodmap. This is not strictly speaking
+# Remap caps lock to escape with setxkbmap. This is not strictly speaking
 # xmonad related, but it's handy if you're a vim user.
-xmodmap ~/.xmodmaprc
+setxkbmap -option caps:escape
 
 # Run the policy kit authentication agent to allow Ubuntu Software Centre to
 # prompt for authentication
