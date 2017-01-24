@@ -48,6 +48,8 @@ case $HOSTNAME in
 		;;
 	"daedalus")
 		# TODO: add daedalus config
+		# Activate primary screen 
+		xrandr --output LVDS-1 --auto --primary
 		;;
 	*)
 		# Default config
