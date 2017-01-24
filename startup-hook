@@ -18,10 +18,14 @@ if [ -z "$(pgrep nm-applet)" ] ; then
 fi
 
 # Dropbox
-dropbox start
+if [ -z "$(pgrep dropbox)" ] ; then
+	dropbox start
+fi
 
 # OwnCloud
-owncloud &
+if [ -z "$(pgrep owncloud)" ] ; then
+	owncloud &
+fi
 
 # Applet for managing print jobs from the tray.
 if [ -z "$(pgrep system-config-printer-applet)" ] ; then
@@ -59,5 +63,7 @@ fi
 # xinput set-button-map 10 1 0 3 4 5 6 7
 
 # Use redshift to adjust screen colour temperature. Helps out them eyes!
-redshift -c ~/.redshift.conf
+if  [ -z "$(pgrep redshift)" ] ; then
+	redshift -c ~/.redshift.conf
+fi
 
