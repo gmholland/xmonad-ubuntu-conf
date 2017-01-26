@@ -18,7 +18,8 @@ if [ -z "$(pgrep nm-applet)" ] ; then
 fi
 
 # Dropbox
-if [ -z "$(pgrep dropbox)" ] ; then
+dropbox running
+if [ $? -eq 0 ] ; then
 	dropbox start
 fi
 
