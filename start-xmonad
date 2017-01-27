@@ -47,9 +47,12 @@ case $HOSTNAME in
 		xrandr | grep 'HDMI1 connected' | ifne xrandr --output HDMI1 --auto --left-of HDMI2
 		;;
 	"daedalus")
-		# TODO: add daedalus config
 		# Activate primary screen 
-		xrandr --output LVDS-1 --auto --primary
+		xrandr --output LVDS --auto --primary
+
+		# If we find that a screen is connected via VGA, activate it and position it
+		# to the left of the primary screen.
+		xrandr | grep 'VGA-0 connected' | ifne xrandr --output VGA-0 --auto --left-of LVDS
 		;;
 	*)
 		# Default config
