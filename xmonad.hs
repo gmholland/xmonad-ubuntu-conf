@@ -44,7 +44,7 @@ myModMask            = mod4Mask       -- changes the mod key to "super"
 myFocusedBorderColor = "#d3d7cf"      -- color of focused border
 myNormalBorderColor  = "#2e3436"      -- color of inactive border
 myBorderWidth        = 3              -- width of border around windows
-myTerminal           = "xterm"        -- which terminal software to use
+myTerminal           = "urxvt"        -- which terminal software to use
 myIMRosterTitle      = "Buddy List"   -- title of roster on IM workspace
                                       -- use "Buddy List" for Pidgin, but
                                       -- "Contact List" for Empathy
