@@ -40,11 +40,11 @@ xcompmgr -n &
 case $HOSTNAME in
 	"ensc-rcl-03")
 		# Activate primary screen 
-		xrandr --output HDMI3 --auto --primary
+		xrandr --output HDMI1 --auto --primary
 
 		# If we find that a screen is connected via DVI, activate it and position it
 		# to the left of the primary screen.
-		xrandr | grep 'HDMI1 connected' | ifne xrandr --output HDMI1 --auto --left-of HDMI1
+		xrandr | grep 'HDMI3 connected' | ifne xrandr --output HDMI3 --auto --left-of HDMI1
 		;;
 	"daedalus")
 		# Activate primary screen 
